@@ -11,7 +11,7 @@ export const SearchButton = ({ onClick }) => {
     <button
       type="button"
       className="uni-SearchButton"
-      title="Search"
+      title="Chercher"
       onClick={(event) => {
         event.target.blur();
         onClick();

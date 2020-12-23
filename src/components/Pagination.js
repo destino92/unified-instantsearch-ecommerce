@@ -20,7 +20,7 @@ export const Pagination = connectPagination(function Pagination(props) {
           <li className="ais-Pagination-item ais-Pagination-item--previousPage">
             <a
               className="ais-Pagination-link"
-              title="Previous page"
+              title="Page précédente"
               href={props.createURL(props.currentRefinement - 1)}
               onClick={(event) => {
                 event.preventDefault();
@@ -73,7 +73,7 @@ export const Pagination = connectPagination(function Pagination(props) {
           <li className="ais-Pagination-item ais-Pagination-item--nextPage">
             <a
               className="ais-Pagination-link"
-              title="Next page"
+              title="Page suivante"
               href={props.createURL(props.currentRefinement + 1)}
               onClick={(event) => {
                 event.preventDefault();

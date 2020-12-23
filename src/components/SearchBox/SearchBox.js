@@ -39,7 +39,7 @@ export const SearchBox = (props) => {
         onSubmit={onSubmit}
         onReset={onReset}
       >
-        <button className="ais-SearchBox-submit" type="submit" title="Search">
+        <button className="ais-SearchBox-submit" type="submit" title="Chercher">
           <label
             className="ais-SearchBox-submitIcon"
             id="unified-label"
@@ -117,7 +117,7 @@ export const SearchBox = (props) => {
 
         <button
           type="reset"
-          title="Clear the query"
+          title="Effacer la requête"
           className="ais-SearchBox-reset"
           hidden={props.currentRefinement.length === 0 || props.isSearchStalled}
           onClick={onReset}

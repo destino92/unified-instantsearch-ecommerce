@@ -27,7 +27,7 @@ export const FacetSearchBox = (props) => {
         />
         <button
           type="submit"
-          title="Submit your search query."
+          title="Envoyez votre requête de recherche."
           className="ais-SearchBox-submit"
         >
           <svg
@@ -42,7 +42,7 @@ export const FacetSearchBox = (props) => {
 
         <button
           type="reset"
-          title="Clear the search query."
+          title="Effacez la requête de recherche."
           className="ais-SearchBox-reset"
           hidden={props.query.length === 0}
           onClick={props.onReset}

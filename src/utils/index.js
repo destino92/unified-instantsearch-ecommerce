@@ -54,6 +54,8 @@ export function getAttributeValueByPath(hit, path) {
 
 export function getDomElement(value) {
   const isSelectorString = typeof value === 'string';
+  console.log(isSelectorString);
+  console.log(document.querySelector(value));
 
   return isSelectorString ? document.querySelector(value) : value;
 }

@@ -30,18 +30,18 @@ import { Hit } from './Hit';
 */
 
 export const inputContainer = '#search-button';
-export const inputContent = 'Search for products';
+export const inputContent = 'Rechercher Produits';
 export const keyboardShortcuts = ['/'];
-export const appId = 'latency';
-export const searchApiKey = '6be0576ff61c053d5f9a3225e2a90f76';
+export const appId = '4PQHYRMCTI';
+export const searchApiKey = '884789227233d2c5fb7909c1229a9e11';
 export const hitComponent = Hit;
 export const index = {
-  indexName: 'instant_search',
+  indexName: 'Gig_development',
   searchParameters: {
     analytics: true,
     clickAnalytics: true,
     hitsPerPage: 18,
-    attributesToSnippet: ['description:25'],
+    attributesToSnippet: ['description.body:25'],
   },
 };
 
@@ -78,12 +78,20 @@ export const setUserToken = (setToken) => {
 
 export const sorts = [
   {
-    label: 'Price ascending',
-    value: 'instant_search_price_asc',
+    label: 'Prix ​​croissant',
+    value: 'sort_price_asc',
   },
   {
-    label: 'Price descending',
-    value: 'instant_search_price_desc',
+    label: 'Prix ​​décroissant',
+    value: 'sort_price_desc',
+  },
+  {
+    label: 'Date ​​croissant',
+    value: 'sort_date_asc',
+  },
+  {
+    label: 'Date ​​décroissant',
+    value: 'sort_date_desc',
   },
 ];
 
@@ -103,43 +111,31 @@ export const sorts = [
 
 export const refinements = [
   {
-    type: 'hierarchical',
-    header: 'Categories',
-    label: 'Category',
-    options: {
-      attributes: [
-        'hierarchicalCategories.lvl0',
-        'hierarchicalCategories.lvl1',
-      ],
-      limit: 6,
-      showMore: true,
-    },
-  },
-  {
     type: 'list',
-    header: 'Brands',
-    label: 'Brand',
+    header: 'Categories',
+    label: 'Categorie',
     options: {
-      attribute: 'brand',
+      attribute: 'category',
       searchable: true,
-      showMore: true,
       limit: 6,
-      showMoreLimit: 20,
+      showMore: true,
       translations: {
         showMore: (expanded) =>
-          expanded ? '- View fewer brands' : '+ View more brands',
+          expanded ? '- Moin de catégories' : '+ Plus de catégories',
+        placeholder:
+          'Rechercher'
       },
     },
   },
   {
     type: 'slider',
-    header: 'Price',
-    label: 'Price',
+    header: 'Prix',
+    label: 'Prix',
     options: {
       attribute: 'price',
       transformValue: (value) => (
         <>
-          <span className="uni-Hit-currency">$</span>
+          <span className="uni-Hit-currency">Fcfa</span>
           {value}
         </>
       ),
@@ -163,12 +159,12 @@ export const refinements = [
 |
 */
 
-export const suggestionsIndex = {
+/*export const suggestionsIndex = {
   indexName: 'instant_search_demo_query_suggestions',
   searchParameters: {
     hitsPerPage: 6,
   },
-};
+};*/
 
 /*
 |-------------------------------------------------------------------------------
@@ -184,8 +180,8 @@ export const suggestionsIndex = {
 
 export const styles = {
   colors: {
-    primary: '#d02139',
-    secondary: '#21243d',
+    primary: '#69c5db',
+    secondary: '#312782',
   },
   text: {
     fontFamily: `-apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen,

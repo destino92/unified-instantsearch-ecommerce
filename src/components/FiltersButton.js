@@ -13,7 +13,7 @@ export function FiltersButton({ onClick }) {
       className="uni-FiltersButton"
     >
       <FilterIcon />
-      Filters
+      Filtres
       {refinementCount > 0 && (
         <span className="uni-FiltersButton-Count">{refinementCount}</span>
       )}

@@ -56,7 +56,7 @@ export function Search(props) {
 
             <button
               className="uni-CloseButton"
-              title="Press Esc to close"
+              title="Appuyez sur Echap pour fermer"
               onClick={props.onClose}
             >
               <CloseIcon />
@@ -84,13 +84,13 @@ export function Search(props) {
                       className="uni-Refinements-heading"
                       data-layout="mobile"
                     >
-                      <span>Filters</span>
+                      <span>Filtres</span>
                       <button
                         onClick={() => {
                           props.setIsFiltering(false);
                         }}
                         className="uni-Refinements-closeButton"
-                        title="Close filters"
+                        title="Fermer les filtres"
                       >
                         <CloseIcon />
                       </button>
@@ -128,7 +128,7 @@ export function Search(props) {
                 <div className="uni-BodyHeader-extraOptions">
                   {sorts.length > 1 && (
                     <div className="uni-BodyHeader-sortBy">
-                      <span className="uni-Label">Sort by</span>
+                      <span className="uni-Label">Trier par</span>
                       <SortBy
                         items={sorts}
                         defaultRefinement={sorts[0].value}

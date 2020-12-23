@@ -59,7 +59,7 @@ const NoResults = React.memo(
     return (
       <div className="uni-NoResults">
         <h2 className="uni-NoResults-Title">
-          No results for “<em>{props.query}</em>“.
+          Aucun résultat pour “<em>{props.query}</em>“.
         </h2>
 
         <ResultsInAllCategories>
@@ -89,7 +89,7 @@ const ResultsInAllCategories = connectCurrentRefinements(function ClearFilters(
   return (
     <>
       <p>
-        Check the spelling, try a more general term, or{' '}
+        Vérifiez l'orthographe, essayez un terme plus général ou{' '}
         <button
           className="uni-NoResults-ClearButton"
           onClick={(event) => {
@@ -97,7 +97,7 @@ const ResultsInAllCategories = connectCurrentRefinements(function ClearFilters(
             props.refine(props.items);
           }}
         >
-          remove filters
+          supprimer les filtres
         </button>
         .
       </p>
@@ -119,7 +119,7 @@ const ResultsInAllCategories = connectCurrentRefinements(function ClearFilters(
             props.refine(props.items);
           }}
         >
-          See results in all categories
+          Voir les résultats dans toutes les catégories
         </button>
       </div>
     </>
@@ -136,7 +136,7 @@ const HitsPreview = connectHits(function MoreHits(props) {
   return (
     <div>
       <p className="uni-NoResults-ResultSuggestionTitle">
-        Results for “<em>{searchState.query}</em>“ in all categories:
+        Résultats pour “<em>{searchState.query}</em>“ dans toutes les catégories:
       </p>
 
       <div className="ais-Hits">

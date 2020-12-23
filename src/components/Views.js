@@ -6,7 +6,7 @@ export function Views(props) {
   return (
     <ul className="uni-BodyHeader-view">
       <button
-        title="Switch to grid view"
+        title="Passer à la vue grille"
         className={[
           'uni-BodyHeader-viewButton',
           props.view === 'grid' && 'uni-BodyHeader-viewButton--active',
@@ -20,7 +20,7 @@ export function Views(props) {
       </button>
 
       <button
-        title="Switch to list view"
+        title="Passer à la vue de liste"
         className={[
           'uni-BodyHeader-viewButton',
           props.view === 'list' && 'uni-BodyHeader-viewButton--active',

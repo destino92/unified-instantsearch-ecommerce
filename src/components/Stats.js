@@ -6,9 +6,9 @@ export const Stats = connectStats(function Stats(props) {
     <div className="ais-Stats">
       <h1 className="ais-Stats-text">
         <span className="ais-Stats-mainText">
-          {props.nbHits.toLocaleString()} products
+          {props.nbHits.toLocaleString()} produits
         </span>{' '}
-        found
+        trouvés
       </h1>
     </div>
   );

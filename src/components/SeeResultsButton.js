@@ -7,7 +7,7 @@ export const SeeResultsButton = connectStats(function SeeResultsButton(props) {
       className="uni-Refinements-button uni-Refinements-resultButton"
       onClick={props.onClick}
     >
-      See {props.nbHits.toLocaleString()} results
+      Voir {props.nbHits.toLocaleString()} résultas
     </button>
   );
 });

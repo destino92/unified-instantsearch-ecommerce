@@ -17,7 +17,7 @@ export const InfiniteHits = connectInfiniteHits((props) => {
           className="ais-InfiniteHits-loadPrevious"
           onClick={props.refinePrevious}
         >
-          Show previous
+          Afficher précédents
         </button>
       )}
 
@@ -39,7 +39,7 @@ export const InfiniteHits = connectInfiniteHits((props) => {
 
       {props.hasMore && (
         <button ref={setObservedNode} className="ais-InfiniteHits-loadMore">
-          Load more
+          Charger plus
         </button>
       )}
     </div>
